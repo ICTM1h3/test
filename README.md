@@ -7,6 +7,7 @@ De volgende leden hebben al geleerd om met github te werken:
 -Maarten
 -Iris
 -jerimi
+-Jerimi via github client
 
 Dit is toegevoegd vanuit een andere branch
 
