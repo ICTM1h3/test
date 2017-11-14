@@ -11,5 +11,6 @@ De volgende leden hebben al geleerd om met github te werken:
 - Jerimi via een andere branch
 
 Dit is toegevoegd vanuit een andere branch
+....
 
 Nog iets toegevoegd
