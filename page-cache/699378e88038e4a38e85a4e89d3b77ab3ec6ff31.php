@@ -5,6 +5,6 @@ $users = ['<script>alert("Boe")</script>', '<h1>', 'Lorem', 'ipsum', 'dolor' ];
 ?>
 
 
-{% foreach $user in $users %}
-	{{$user}}<br />   
-{% end %}
+<?php foreach ($users as $user) { ?>
+	<?= htmlentities($user) ?><br />   
+<?php } ?>
