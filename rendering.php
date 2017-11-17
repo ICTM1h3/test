@@ -63,6 +63,8 @@ function createAndExecuteCache($path) {
 	
 	// Create a safe way to echo data
 	$adjustedContent = preg_replace("/\{\{(.*?)\}\}/i", "<?= htmlentities($1) ?>", $content);
+	$adjustedContent = preg_replace("/\{\%\s*foreach\s+([\w\$_]+)\s+in\s+([\w\$_]+)\s*\%\}/i", "<?php foreach ($2 as $1) { ?>", $adjustedContent);
+	$adjustedContent = preg_replace("/\{\%\s*end\s*\%\}/i", "<?php } ?>", $adjustedContent);
 	
 	// Get the path where we will write the results.
 	$cachePath = getCachePath($path);
