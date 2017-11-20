@@ -1,0 +1,1 @@
+Kleine website snel gemaakt met mini template engine. Kan makkelijk uitgebreid worden met extra regular expressions.
